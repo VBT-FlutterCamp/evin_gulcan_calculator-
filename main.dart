@@ -8,11 +8,11 @@ void main() {
 
   // Kullanııcıdan birinci sayıyı girmesini istiyoruz.
   print("Birinci sayiyi giriniz :");
-  final double sayi1 = double.parse(stdin.readLineSync()!);
+  final double sayi1 = double.parse(stdin.readLineSync() ?? "0");
 
   // Kullanııcıdan ikinci sayıyı girmesini istiyoruz.
   print("İkinci sayiyi giriniz :");
-  final double sayi2 = double.parse(stdin.readLineSync()!);
+  final double sayi2 = double.parse(stdin.readLineSync() ?? "0");
 
   final Calculate calculate = Calculate(sayi1, sayi2);
 
